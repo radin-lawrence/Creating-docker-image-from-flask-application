@@ -120,8 +120,7 @@ docker login
 ~~~
 Enter your credentials and you will get a login succeeded message/result once done
 
-
-
+![image](https://user-images.githubusercontent.com/100775027/165773373-664a1e29-4970-4e8c-b46f-86c431ffe43a.png)
 
 We will rename the custom image (flasktest:1) to desired one, here I rename it to:
 
@@ -141,6 +140,9 @@ docker image push <user_name>/flaskapptest:custom
 docker image push <user_name>/flaskapptest:latest
 ~~~
 
+![image](https://user-images.githubusercontent.com/100775027/165774663-9262053f-6d5e-431b-af10-9d78f813d0ca.png)
+
+
 Now we can pull this image for creating docker container!
 
 ## To check: 
@@ -150,13 +152,21 @@ Now we can pull this image for creating docker container!
 Now we can pull this image for creating docker container! Let's try to pull this image in [play-with-docker](https://labs.play-with-docker.com/) :
 
 ~~~sh
-docker image pull devanandts/flasktest:custom
-docker container run --name web -d -p 80:5000 devanandts/flasktest:custom
+docker image pull <user_name>/flaskapptest:latest
 ~~~
 
+![image](https://user-images.githubusercontent.com/100775027/165773614-e7eee5c1-5ec9-4cdc-9ee0-90794d1e73bb.png)
 
 
+~~~sh
+docker container run --name web -d -p 80:5000 <user_name>/flaskapptest:custom
+~~~
 
+![image](https://user-images.githubusercontent.com/100775027/165774163-839edf54-2ddb-48f4-b755-312aa8350cdf.png)
+
+Loads the public ip on browser,
+
+![image](https://user-images.githubusercontent.com/100775027/165774343-5617e416-b201-444a-bdc5-b4d4758c7745.png)
 
 
 ## Conclusion
@@ -164,6 +174,10 @@ docker container run --name web -d -p 80:5000 devanandts/flasktest:custom
 This is how a secure docker custom image is created and pushed to docker hub. Please contact me when you encounter any difficulty error while using this terrform code. Thank you and have a great day!
 
 
+ ### ⚙️ Connect with Me
+<p align="center">
+<a href="https://www.linkedin.com/in/radin-lawrence-8b3270102/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="mailto:radin.lawrence@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 
 
 
