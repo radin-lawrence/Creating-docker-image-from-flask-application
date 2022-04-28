@@ -146,9 +146,8 @@ Now we can pull this image for creating docker container!
 ## To check: 
 
 
-## Testing
 
-Now we can pull this image for creating docker container! Let's try to pull this image in [play-with-docker]() :
+Now we can pull this image for creating docker container! Let's try to pull this image in [play-with-docker](https://labs.play-with-docker.com/) :
 
 ~~~sh
 docker image pull devanandts/flasktest:custom
