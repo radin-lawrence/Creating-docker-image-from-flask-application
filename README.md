@@ -65,7 +65,7 @@ Add:
 flask
 ~~~
 
-##4.  Create Dockerfile 
+##  Create Dockerfile 
 
 Now we will edit the Dockerfile for building our custom docker image from flask application. Open "Dockerfile" 
 ~~~sh
