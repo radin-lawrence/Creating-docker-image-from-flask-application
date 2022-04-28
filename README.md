@@ -149,7 +149,7 @@ Now we can pull this image for creating docker container!
 
 
 
-Now we can pull this image for creating docker container! Let's try to pull this image in [play-with-docker](https://labs.play-with-docker.com/) :
+ Let's try to pull this image in [play-with-docker](https://labs.play-with-docker.com/) :
 
 ~~~sh
 docker image pull <user_name>/flaskapptest:latest
@@ -157,8 +157,10 @@ docker image pull <user_name>/flaskapptest:latest
 
 ![image](https://user-images.githubusercontent.com/100775027/165773614-e7eee5c1-5ec9-4cdc-9ee0-90794d1e73bb.png)
 
+Launch thr conatiner from the image <user_name>/flaskapptest:latest
 
 ~~~sh
+
 docker container run --name web -d -p 80:5000 <user_name>/flaskapptest:custom
 ~~~
 
